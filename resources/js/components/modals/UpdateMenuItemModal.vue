@@ -140,7 +140,7 @@
           <template #field>
             <SelectControl
               v-model:selected="newItem.target"
-              @change="newItem.target = $event"
+              @change="newItem.target = $event.target.value"
               :options="[
                 {
                   value: '_self',
